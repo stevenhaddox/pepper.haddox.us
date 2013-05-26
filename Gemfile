@@ -38,3 +38,7 @@ group :test do
   gem 'database_cleaner'
   gem 'rspec-rails'
 end
+
+group :production do
+  gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
+end
