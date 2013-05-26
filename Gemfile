@@ -2,8 +2,11 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc1'
-
+gem 'high_voltage'
+gem 'markdown-rails'
 gem 'pg'
+gem 'redcarpet'
+gem 'bootstrap-sass', '~> 2.3.1.2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc1'

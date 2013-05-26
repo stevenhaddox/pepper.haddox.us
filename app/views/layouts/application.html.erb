@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pepper</title>
+  <title>Pepper the Whippet</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link rel='stylesheet' href='/favicon.ico' />
+  <%= favicon_link_tag 'favicon.ico' %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<div id="wrap">
 
-<%= yield %>
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="brand" href="/">Pepper</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">About Her</a></li>
+            <%- if params[:id]=="lost" %>
+              <li><a href="/lost">Pepper is LOST!</a></li>
+            <%- end %>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Begin page content -->
+  <div class="container">
+    <%= yield %>
+  </div>
+
+  <div id="push"></div>
+</div>
+
+<div id="footer">
+  <div class="container">
+    <p class="muted credit"></p>
+  </div>
+</div>
 
 </body>
 </html>
