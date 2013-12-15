@@ -15,4 +15,7 @@
 //= require turbolinks
 //= require bootstrap
 //= require html5shiv
+//= require galleria/galleria-1.3.3.min
+//= require galleria
+//= require galleria/plugins/flickr/galleria.flickr.min
 //= require_tree .
