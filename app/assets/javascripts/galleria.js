@@ -1,6 +1,6 @@
 $(document).ready(function(){
   if($('.galleria').length) {
-    Galleria.loadTheme('assets/galleria/themes/classic/galleria.classic.min.js');
+    Galleria.loadTheme('/galleria/themes/classic/galleria.classic.min.js');
     var flickr = new Galleria.Flickr();
     flickr.setOptions({
       max: 100,
@@ -14,3 +14,4 @@ $(document).ready(function(){
     });
   }
 });
+
